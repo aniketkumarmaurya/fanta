@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fantaweb.css">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+.nav-container {
+    width: 90%;
+    height: 90px;
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+  }
+  
+  .logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff6a00;
+  }
+  
+  .navbar {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .navbar a:hover {
+    color: #ff6a00;
+  }
+  
+  .buy-btn {
+    padding: 10px 20px;
+    background-color: #ff6a00;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .buy-btn:hover {
+    background-color: #e65c00;
+  }
+.main{
+    width: 100%;
+    height: calc(100% - 90px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(150deg, rgb(225,153,0), rgb(255,94,0));
+    
+    position: relative;
+}  
+.fanta{
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+
+}
+.page2{
+    width: 100%;
+    height: 100%;
+    background-color: red;
+}
+.orange{
+    width: 17%;
+    position: absolute;
+    bottom: 10%;
+    left:50%;
+    z-index: 3;
+}
+.slice-orange {
+    width: 12%;
+    top: 3%;
+    left: 35%;
+    position: absolute;
+    z-index: 1;
+}
+.fantatext {
+    font-size: 20vw;
+    position: absolute;
+    font-weight: 600;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.rightimg {
+    width: 10%;
+    position: absolute;
+    top: 0%;
+    right: 0;
+}
+
+.textimg {
+    width: 15%;
+    position: absolute;
+    top: 15%;
+    left: 12%;
+}
+
+
+.about-section {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-color: #fff3e0;
+    padding: 60px 80px;
+    
+    gap: 50px;
+  }
+  
+  .about-left {
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+   
+
+  }
+  .about-left img {
+    width: 100%;
+    max-width: 400px;
+    
+   
+  }
+  
+ 
+  .orange-splash {
+    position: absolute;
+    width: 100%;
+    max-width: 350px;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    opacity: 0.8;
+  }
+  
+  .about-right {
+  width: 50%;
+    color: #333;
+   display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+  }
+  
+  .about-right h2 {
+    font-size: 3rem;
+    color: #ff6a00;
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .about-right p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    max-width: 550px;
+  }
+  
+
+
+
+
+  .page3{
+    width: 100%;
+    height: 100%;
+    background: 	#fff0c1;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  .page3box1{
+   
+width: 30%;
+height: 80%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+  }
+  .box1img{
+    width: 75%;
+    z-index: 9;
+  }
+  .standbax{
+    width: 80%;
+    margin-top: -40px;
+  }
+
+  /* From Uiverse.io by mrhyddenn */ 
+.shadow__btn {
+    padding: 10px 20px;
+    border: none;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 7px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+    transition-property: box-shadow;
+    cursor: pointer;
+  }
+  
+  .shadow__btn {
+    background: #ff7f50;
+    box-shadow: rgba(0, 0, 0, 0.2);
+  }
+  
+  .shadow__btn:hover {
+    box-shadow: 0 0 5px rgb(0,140,255),
+                0 0 25px rgb(0,140,255),
+                0 0 50px rgb(0,140,255),
+                0 0 100px rgb(0,140,255);
+  }
+
+  .center{
+ width: 80%;
+  }
+  .parent{
+      width: 100%;
+      height: 85%;
+      display: flex;
+      align-items: end;
+      justify-content: center;
+      
+  }
+    </style>
+</head>
+<body>
+    
+<header>
+    <div class="nav-container">
+        <div class="logo">🍊 Fanta</div>
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#">Flavors</a>
+            <a href="#">Products</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a> 
+        </nav>
+        <button class="buy-btn">Buy Now</button>
+</header>
+
+<div class="main">
+    <img class="fanta" src="fanta image.png" alt="">
+
+    <img class="orange" src="o.png" alt="">
+    <img class="slice-orange" src="orage image with  second.png" alt="">
+    <h1 class="fantatext">FANTA</h1>
+    <img class="rightimg" src="Leaves-Download-PNG-Image.png" alt="">
+    <img class="textimg" src="Leaves-PNG-Image.png" alt="">
+</div>
+    
+
+<div class="page2">
+
+
+    <section class="about-section">
+        <div class="about-left">
+         <img id="stand" src="stand 2.webp" alt="">
+        </div>
+        <div class="about-right">
+          <h2>About Us</h2>
+          <p>
+            We’re Fanta — the drink that adds a pop of color, fizz, and fruitiness to your every day! Born from a spirit of creativity and a love for bold flavors, Fanta has been spreading joy with its vibrant taste for decades.
+          </p>
+          <p>
+            With our roots in innovation and fun, we've grown into a global favorite — known for our playful vibe and mouth-watering range of fruity flavors. From zesty orange to exotic new twists, we keep it fresh, fizzy, and fantastic.
+          </p>
+          
+        </div>
+      </section>
+      
+
+</div>
+
+
+
+<div class="page3">
+
+
+    <div class="page3box1">
+
+        <img class="box1img" src="fanta box1 image.png" alt="">
+
+        <img class="standbax" src="stand 2.webp" alt="">
+
+        <button class="shadow__btn">
+            buy now
+        </button>
+
+
+    </div>
+
+
+
+    <div class="page3box1">
+<div class="parent">
+    <img class="center" src="stand 2.webp" alt="">
+     
+
+</div>
+  <button class="shadow__btn">
+            buy now
+        </button>
+
+        
+    </div>
+    <div class="page3box1">
+        <img class="box1img" src="fanta box1 image.png" alt="">
+
+        <img class="standbax" src="stand 2.webp" alt="">
+
+        <button class="shadow__btn">
+            buy now
+        </button>
+    </div>
+
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script >
+        gsap.from(".fanta", {
+    scale: 0,
+    duration: 1.5,
+    opacity:0,
+    ease:"back.out(1.7)",
+});
+gsap.from(".slice-orange ", {
+    scale: 0,
+    x: -200,
+    duration: 1.5,
+    opacity:0,
+    ease:"back.out(1.7)",
+})
+gsap.from(".orange ", {
+    scale: 0,
+    x: 200,
+    duration: 1.5,
+    opacity:0,
+    ease:"back.out(1.7)",
+})
+gsap.from(".fantatext",{
+    x:-500,
+    duration: 1.5,
+    opacity:0,
+    ease:"back.out(1.7)",
+    scale:0,
+})
+gsap.to(".rightimg",{
+  scale:1,
+  duration: 1.5,
+    width:"30%",
+    ease:"back.out(1.7)",
+
+})
+gsap.from(".textimg",{
+    x:-200,
+    scale:0,
+    duration: 1.5,
+    opacity:0,
+    ease:"back.out(1.7)",
+})
+
+let tl2=gsap.timeline({
+    scrollTrigger:{
+        trigger:".page2",
+        start:"0% 95%",
+        end:"50% 50%",
+        scrub:true,
+       
+    }
+});
+let tl=gsap.timeline({
+    scrollTrigger:{
+        trigger:".page3",
+        start:"0% 95%",
+        end:"50% 50%",
+        scrub:true,
+        
+    }
+});
+tl2.to(".fanta",{
+    top:"150%",
+    left:"27%",
+    scrub:true, 
+    duration: 1.5,
+    ease:"power1.Outin"
+});
+
+let orange=gsap.timeline({
+    scrollTrigger:{
+        trigger:".page2",
+        start:"0% 95%",
+        end:"50% 50%",
+        scrub:true,
+        
+    }
+});
+
+let orangeslice=gsap.timeline({
+    scrollTrigger:{
+        trigger:".page2",
+        start:"0% 95%",
+        end:"50% 50%",
+        scrub:true,
+        
+    }
+});
+let rightimg=gsap.timeline({
+    scrollTrigger:{
+        trigger:".page2",
+        start:"0% 95%",
+        end:"50% 50%",
+        scrub:true,
+        
+    }
+});
+
+orange.to(".orange",{
+    top:"170%",
+    left:"30%",
+    scrub:true, 
+    duration: 1.5,
+    ease:"power1.Outin"
+});
+orangeslice.to(".slice-orange",{
+    top:"100%",
+    left:"13%",
+    scrub:true, 
+    duration: 1.5,
+    ease:"power1.Outin"
+});
+rightimg.to(".rightimg",{
+    top:"100%",
+    
+    scrub:true, 
+    duration: 1.5,
+    ease:"power1.Outin"
+});
+
+
+
+tl.to(".fanta",{
+    top:"258%",
+    left:"50%",
+    scrub:true, 
+    duration: 1.5,
+    ease:"power1.Outin",
+    scale:0.9,
+})
+
+    </script>
+</body>
+</html>
